@@ -5,9 +5,17 @@ class TodoList
     end
 
   attr_accessor :title, :items
+
+  def add_item(new_item)
+  	item = Item.new(new_item)
+  	@items.push(item)
+  end
   
 end
 
 class Item
-    # methods and stuff go here
+    def intialize(item_description)
+    	@description = item_description
+    	@completed_status = false
+    end
 end
