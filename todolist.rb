@@ -3,6 +3,9 @@ class TodoList
     	@title = list_title
     	@items = []
     end
+
+  attr_accessor :title, :items
+  
 end
 
 class Item
