@@ -1,5 +1,8 @@
 class TodoList
-    # methods and stuff go here
+    def initialize(list_title)
+    	@title = list_title
+    	@items = []
+    end
 end
 
 class Item
