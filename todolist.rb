@@ -14,7 +14,7 @@ class TodoList
 end
 
 class Item
-    def intialize(item_description)
+    def initialize(item_description)
     	@description = item_description
     	@completed_status = false
     end
