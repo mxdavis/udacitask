@@ -5,6 +5,9 @@ newlist = TodoList.new("My to do")
 
 # Add four new items
 newlist.add_item("set alarm")
+newlist.add_item("do website")
+newlist.add_item("fix leak")
+newlist.add_item("cook dinner")
 
 # Print the list
 puts newlist.title
