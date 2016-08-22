@@ -28,9 +28,12 @@ class TodoList
     end
   end
 
-  def item_completed(index)
-  	items[index].item_completed
+  def item_completed_and_moved(index)
   	@completed_items << @items.delete_at(index)
+  end
+
+  def item_not_completed_and_moved_back(index)
+  	@items << @completed_items.delete_at(index)
   end
   
   def print_todo_list
@@ -45,6 +48,18 @@ class TodoList
   	puts "Completed Items"
   	puts '-' * 44
   	puts @completed_items
+  end
+
+  def is_item_completed?(description)
+  	puts description
+  	if @completed_items.include? description
+  		puts "#{description} has been completed"
+  	elsif
+  		@items.include? description
+  		puts "#{description} has not been completed"
+  	else
+  		puts "This item does not exist"
+  	end
   end
 
   def show_trash
@@ -69,12 +84,10 @@ class TodoList
 end
 
 class Item
+	attr_accessor :description
+
     def initialize(item_description)
     	@description = item_description
-    	@completed_status = false
     end
 
-    def item_completed
-    	@completed_status = true
-    end
 end

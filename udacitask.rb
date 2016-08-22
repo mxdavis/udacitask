@@ -25,7 +25,10 @@ newlist.delete_item(1)
 newlist.print_todo_list
 
 # Update the completion status of the first item to complete
-# newlist.item_completed(0)
+newlist.item_completed_and_moved(0)
+
+# Check if item is completed
+newlist.is_item_completed?("do website1")
 
 # Print the list
 newlist.print_todo_list
@@ -38,6 +41,7 @@ newlist.print_todo_list
 
 # Check if item deleted and restore
 newlist.check_if_item_deleted_and_restore("set alarm")
+newlist.check_if_item_deleted_and_restore("item doesn't exist")
 
 # Print the list
 newlist.print_todo_list
@@ -53,6 +57,12 @@ newlist.print_todo_list
 
 # Show only important items
 newlist.show_important_items
+
+# Show completed items
+newlist.show_completed_items
+
+# Mark item not completed
+newlist.item_not_completed_and_moved_back(0)
 
 # Show completed items
 newlist.show_completed_items
