@@ -13,18 +13,26 @@ newlist.add_item("cook dinner")
 newlist.print_todo_list
 
 # Delete the first item
+newlist.delete_item(0)
 
 # Print the list
+newlist.print_todo_list
 
 # Delete the second item
+newlist.delete_item(1)
 
 # Print the list
+newlist.print_todo_list
 
 # Update the completion status of the first item to complete
+newlist.item_completed(0)
 
 # Print the list
+newlist.print_todo_list
 
 # Update the title of the list
+newlist.change_title_of_existing_list("Personal To Do")
 
 # Print the list
+newlist.print_todo_list
 
