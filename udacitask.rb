@@ -25,7 +25,7 @@ newlist.delete_item(1)
 newlist.print_todo_list
 
 # Update the completion status of the first item to complete
-newlist.item_completed(0)
+# newlist.item_completed(0)
 
 # Print the list
 newlist.print_todo_list
@@ -44,6 +44,18 @@ newlist.print_todo_list
 
 # Show Trash
 newlist.show_trash
+
+# Mark second item important
+newlist.mark_important(1)
+
+# Print the list
+newlist.print_todo_list
+
+# Show only important items
+newlist.show_important_items
+
+# Show completed items
+newlist.show_completed_items
 
 
 

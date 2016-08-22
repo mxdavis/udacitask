@@ -4,6 +4,7 @@ class TodoList
     	@items = []
     	@completed_items = []
     	@deleted_items = []
+    	@important_items = []
     end
 
   attr_accessor :title, :items
@@ -35,8 +36,12 @@ class TodoList
   def print_todo_list
     puts @title
   	puts '-' * 44
+  	puts @important_items
   	puts @items
   	puts '-' * 44
+  end
+
+  def show_completed_items
   	puts "Completed Items"
   	puts '-' * 44
   	puts @completed_items
@@ -48,10 +53,19 @@ class TodoList
   	puts @deleted_items
   end
 
+  def show_important_items
+  	puts "Important Items"
+  	puts '-' * 44
+  	puts @important_items
+  end
+
   def change_title_of_existing_list(new_name)
   	@title = new_name
   end
 
+  def mark_important(index)
+  	@important_items << @items.delete_at(index)
+  end
 end
 
 class Item
