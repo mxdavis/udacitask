@@ -28,7 +28,7 @@ class TodoList
   end
 
   def item_completed(index)
-  	items.item_completed(index)
+  	items[index].item_completed
   	@completed_items << @items.delete_at(index)
   end
   
