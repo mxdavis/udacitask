@@ -8,9 +8,14 @@ class TodoList
 
   def add_item(new_item)
   	item = Item.new(new_item)
-  	@items.push(item)
+  	@items.push(new_item)
   end
   
+  def print_todo_list
+  	puts @title
+  	puts '-' * 44
+  	puts @items
+  end
 end
 
 class Item

@@ -10,8 +10,7 @@ newlist.add_item("fix leak")
 newlist.add_item("cook dinner")
 
 # Print the list
-puts newlist.title
-
+newlist.print_todo_list
 
 # Delete the first item
 
