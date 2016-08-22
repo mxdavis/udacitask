@@ -36,3 +36,14 @@ newlist.change_title_of_existing_list("Personal To Do")
 # Print the list
 newlist.print_todo_list
 
+# Check if item deleted and restore
+newlist.check_if_item_deleted_and_restore("set alarm")
+
+# Print the list
+newlist.print_todo_list
+
+# Show Trash
+newlist.show_trash
+
+
+

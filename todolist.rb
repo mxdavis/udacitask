@@ -17,7 +17,18 @@ class TodoList
 	@deleted_items << @items.delete_at(index)
   end
 
+  def check_if_item_deleted_and_restore(item_description)
+    trueorfalse = @deleted_items.include? item_description
+      if trueorfalse == true  
+      	@items << item_description
+      	@deleted_items.delete(item_description)
+      else 
+        puts "Sorry! This Item is not in the trash."
+    end
+  end
+
   def item_completed(index)
+  	items.item_completed(index)
   	@completed_items << @items.delete_at(index)
   end
   
@@ -31,6 +42,12 @@ class TodoList
   	puts @completed_items
   end
 
+  def show_trash
+  	puts "Trash"
+  	puts '-' * 44
+  	puts @deleted_items
+  end
+
   def change_title_of_existing_list(new_name)
   	@title = new_name
   end
@@ -41,5 +58,9 @@ class Item
     def initialize(item_description)
     	@description = item_description
     	@completed_status = false
+    end
+
+    def item_completed
+    	@completed_status = true
     end
 end
