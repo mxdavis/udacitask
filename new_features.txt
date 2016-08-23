@@ -1,3 +1,7 @@
 completed tasks saved to new array and marked completed so it can be viewed separately and ability to restore
 deleted items saved to new array and ability to restore
+<<<<<<< HEAD
 ability to mark items important and have the important items show first in the list
+=======
+ability to mark items important and have the important items show first in the list and only show important items
+>>>>>>> 13a29d3e518f95f42110c43c8fce38c71cece7b0
