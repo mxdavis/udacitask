@@ -262,3 +262,123 @@ Author: Malki Davis <md01@me.com>
 Date:   Sun Jul 10 01:27:51 2016 +0300
 
     Initial Commit
+commit b1ede412f8af8470310889a8603acf7b2da7c64b
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:47:32 2016 +0300
+
+    last commit must have not added all the files
+
+commit 8a155a98dd2e789ab6c0ea562244b477d8b034eb
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:46:23 2016 +0300
+
+    Let's hope everything is up to date and working now, including log so I can go ahead and resubmit
+
+commit cf32cd532db85df34264e1742fb5681e9d20d253
+Merge: a285cd9 13a29d3
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:45:17 2016 +0300
+
+    update github repo to match the rollback i did on my machine
+
+commit a285cd951157a3318b8a121d15594841fd5cc14f
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:31:52 2016 +0300
+
+    Update log, and ready for resubmission, good luck to me
+
+commit 99023dc62d0b3f16662c8e47c4e8010ace39cb13
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:29:33 2016 +0300
+
+    change index number to actual position on list per reviewer suggestion
+
+commit cbb4c4e81c5f33b42814416f30bb0789748b247e
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 13:09:28 2016 +0300
+
+    roll back git to before make completed status work around fix up add item and redefine methods accordingly
+
+commit 13a29d3e518f95f42110c43c8fce38c71cece7b0
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 00:57:10 2016 +0300
+
+    update log file
+
+commit 9c4045e24594745bd614b0f1eea68550a93c3dbe
+Author: Malki Davis <md01@me.com>
+Date:   Tue Aug 23 00:56:50 2016 +0300
+
+    revise and fix adding to and from completed items
+
+commit 831b4a7f8d19ee8fb36c54a2344e274bf8b9ff66
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 15:35:51 2016 +0300
+
+    update log file
+
+commit 95cc232c8f81316cd41996a1153d880e37ec3373
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 15:34:44 2016 +0300
+
+    add make items important and show them first, print completed items, and important items
+
+commit ca077802aefd8c3995c8a82384f435c5ff928022
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 15:17:40 2016 +0300
+
+    working out changing completed status
+
+commit 9e0ef0cfa91f556b612d56d253ac8b0d9fdc00ab
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 15:08:38 2016 +0300
+
+    working out changing completed status
+
+commit 74c4e857610685e2b00802d05462f9f835401e20
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 13:15:32 2016 +0300
+
+    add method to delete item to trash array, add method to mark as completed to completed array
+
+commit 67541732b61ba24471eaeeb1c6bc2ea455b28eaf
+Author: Malki Davis <md01@me.com>
+Date:   Mon Aug 22 12:50:15 2016 +0300
+
+    define print list
+
+commit 57849dcaa8b3a1a16bb1ec1256b307436c56153a
+Author: Malki Davis <md01@me.com>
+Date:   Tue Jul 26 22:53:47 2016 +0300
+
+    add four new items
+
+commit 85f117e42d3c5159eea19fcb287bdf3b918d6ff8
+Author: Malki Davis <md01@me.com>
+Date:   Tue Jul 26 22:51:58 2016 +0300
+
+    correct spelling mistake
+
+commit 311ac83f1380ce3eec58b375d061d47431279b60
+Author: Malki Davis <md01@me.com>
+Date:   Sun Jul 10 02:06:02 2016 +0300
+
+    set up initialize for class Item and way to add items that take on Item class and get pushed into items array
+
+commit f7acad164261c39d7f9fb892a8827a675e9147f4
+Author: Malki Davis <md01@me.com>
+Date:   Sun Jul 10 02:01:00 2016 +0300
+
+    allow title and items to be getter setter in TodoList
+
+commit 87036c836899b0247d91282e27fb45510ab495af
+Author: Malki Davis <md01@me.com>
+Date:   Sun Jul 10 01:41:54 2016 +0300
+
+    initialize tasks for class TodoList
+
+commit e2e4992f57c98dcfaa42b8b4bda1f617f8cece4f
+Author: Malki Davis <md01@me.com>
+Date:   Sun Jul 10 01:27:51 2016 +0300
+
+    Initial Commit
