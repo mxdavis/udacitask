@@ -64,9 +64,9 @@ class TodoList
   def item_completed?(item_name)
     items_completed = @completed_items.map {|item| item.description}
     if item_name == items_completed 
-        return "true"
+        return true
     else
-        return "false"
+        return false
     end
   end
 
