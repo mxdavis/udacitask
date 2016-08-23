@@ -15,25 +15,25 @@ class TodoList
   end
 
   def delete_item(index)
-	@deleted_items << @items.delete_at(index)
+	@deleted_items << @items.delete_at(index-1)
   end
 
   def restore_from_trash(index)
-    @items << @deleted_items.delete_at(index)
+    @items << @deleted_items.delete_at(index-1)
   end
 
   def item_not_completed(index)
-    @items << @completed_items.delete_at(index)
+    @items << @completed_items.delete_at(index-1)
   end
 
 
   def mark_important(index)
-    @important_items << @items.delete_at(index)
+    @important_items << @items.delete_at(index-1)
   end
 
   def item_completed(index)
-  	@items[index].item_completed
-  	@completed_items << @items.delete_at(index)
+  	@items[index-1].item_completed
+  	@completed_items << @items.delete_at(index-1)
   end
   
   def print_todo_list
@@ -64,9 +64,9 @@ class TodoList
   def item_completed?(item_name)
     items_completed = @completed_items.map {|item| item.description}
     if item_name == items_completed 
-        puts "true"
+        return "true"
     else
-        puts "false"
+        return "false"
     end
   end
 

@@ -13,37 +13,37 @@ newlist.add_item("cook dinner")
 newlist.print_todo_list
 
 # Delete the first item
-newlist.delete_item(0)
-
-# Print the list
-newlist.print_todo_list
-
-# Delete the second item
 newlist.delete_item(1)
 
 # Print the list
 newlist.print_todo_list
 
+# Delete the second item
+newlist.delete_item(2)
+
+# Print the list
+newlist.print_todo_list
+
 # Update the completion status of the first item to complete
-newlist.item_completed(0)
+newlist.item_completed(1)
 
 # Show Completed Items
 newlist.print_completed_items
 
 # Update the completion status of the first item to complete
-newlist.item_completed(0)
+newlist.item_completed(1)
 
 # Show Completed Items
 newlist.print_completed_items
 
 # Update the completion status of the first item to incomplete
-newlist.item_not_completed(0)
+newlist.item_not_completed(1)
 
 # Show Completed Items
 newlist.print_completed_items
 
 #Check completed item
-newlist.item_completed?(0)
+newlist.item_completed?(1)
 
 # Print the list
 newlist.print_todo_list
@@ -58,7 +58,7 @@ newlist.print_todo_list
 newlist.show_trash
 
 # Check if item deleted and restore
-newlist.restore_from_trash(1)
+newlist.restore_from_trash(2)
 
 # Print the list
 newlist.print_todo_list
@@ -67,7 +67,7 @@ newlist.print_todo_list
 newlist.show_trash
 
 #Mark Important and See it first in the list
-newlist.mark_important(1)
+newlist.mark_important(2)
 
 # Print the list
 newlist.print_todo_list
