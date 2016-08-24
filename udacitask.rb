@@ -9,10 +9,10 @@ newlist.add_item("do website")
 newlist.add_item("fix leak")
 newlist.add_item("cook dinner")
 
-# Print the list
+# # Print the list
 newlist.print_todo_list
 
-# Delete the first item
+# # Delete the first item
 newlist.delete_item(1)
 
 # Print the list
@@ -43,7 +43,8 @@ newlist.item_not_completed(1)
 newlist.print_completed_items
 
 #Check completed item
-newlist.item_completed?(1)
+puts newlist.item_completed?("cook dinner")
+puts newlist.item_completed?("set alarm")
 
 # Print the list
 newlist.print_todo_list
@@ -72,5 +73,3 @@ newlist.mark_important(2)
 # Print the list
 newlist.print_todo_list
 
-#See only important
-newlist.show_important_items

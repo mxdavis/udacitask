@@ -11,7 +11,7 @@ class TodoList
 
   def add_item(new_item)
     item = Item.new(new_item)
-    @items.push(item)
+    @items << item
   end
 
   def delete_item(index)
@@ -28,6 +28,7 @@ class TodoList
 
 
   def mark_important(index)
+  	@items[index-1].item_important
     @important_items << @items.delete_at(index-1)
   end
 
@@ -62,11 +63,13 @@ class TodoList
   end
 
   def item_completed?(item_name)
-    items_completed = @completed_items.map {|item| item.description}
-    if item_name == items_completed 
+  	@completed_items.each do |item|
+	    description = item.description
+      if description == item_name
         return true
-    else
+      else
         return false
+      end
     end
   end
 
@@ -97,19 +100,27 @@ class TodoList
   def change_title_of_existing_list(new_name)
     @title = new_name
   end
-
 end
 
 class Item
 
+  def initialize(item_description)
+    @description = item_description
+    @completed_status = false
+    @important = false
+  end
+
   attr_accessor :description, :completed_status
 
-    def initialize(item_description)
-      @description = item_description
-      @completed_status = false
-    end
+  def item_completed
+    @completed_status = true
+  end
 
-    def item_completed
-      @completed_status = true
-    end
+   def item_important
+    @important = true
+  end
+
+  def print_item
+  	puts "#{@description} is Important = #{@important}, Completed = #{@completed_status}"
+  end
 end
